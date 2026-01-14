@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Organizer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+
+        .board {
+            display: flex;
+            height: 100vh;
+            width: 100vw; 
+            background-color: #f4f4f9;
+        }
+
+
+        .column {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .column h2 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+
+        .task-list {
+            flex-grow: 1;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="board">
+        <div class="column">
+            <h2>To Do</h2>
+            <div class="task-list">
+                </div>
+        </div>
+
+        <div class="column">
+            <h2>In Progress</h2>
+            <div class="task-list">
+                </div>
+        </div>
+
+        <div class="column">
+            <h2>Completed</h2>
+            <div class="task-list">
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
