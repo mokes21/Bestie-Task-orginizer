@@ -22,3 +22,4 @@ graphic side
     style css 
     poszczególne okna/ karty dla zadań 
     opis jest skrócony do dwóch linijek 
+    gggg
