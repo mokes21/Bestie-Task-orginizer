@@ -4,7 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Organizer</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: bottom;
+        }
+
+        .board {
+            display: flex;
+            height: 100vh;
+            width: 100vw; 
+            background-color: #f4f4f9;
+        }
+
+
+        .column {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .column h2 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+
+        .task-list {
+            flex-grow: 1;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+        }
+        .card{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .card h1{
+            font-size: 18px;
+            margin: 0 0 5px 0;
+            text-align: center;
+        }
+        .signature{
+            font-size: 12px;
+            text-align: right;
+            color: #777;
+        }
+        .buttonR{
+            height: 30px;
+            width: 50px;
+            margin: 1%;
+            float: right;
+            text-align: center;
+        }
+        .buttonL{
+            height: 30px;
+            width: 50px;
+            margin: 1%;
+            float: left;
+            text-align: center;
+        }
+        .buttoncontainer{
+            float: right;
+            width: 110px;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,15 +103,13 @@
                     <h1>Sample Task 1 title</h1>
                     <p>Sample Task 1 description</p>
                     <p class="signature">Signature</p>
+
                     <div class="buttoncontainer">
-                        <button class="buttonR">Next</button>
-                        <button class="buttonL">Back</button>
-                    </div>
-                    <div>
                         <button>Edit</button>
                         <button>Delete</button>
+                        <button>Next</button>
+                        <button>Back</button>
                     </div>
-
                 </div> 
             </div>
             <button>
