@@ -73,23 +73,22 @@
             text-align: right;
             color: #777;
         }
-        .buttonR{
-            height: 30px;
-            width: 50px;
-            margin: 1%;
-            float: right;
-            text-align: center;
-        }
-        .buttonL{
-            height: 30px;
-            width: 50px;
-            margin: 1%;
-            float: left;
-            text-align: center;
-        }
         .buttoncontainer{
-            float: right;
-            width: 110px;
+            display: inline-block;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .buttoncontainer button{
+            margin: 2px;
+            width: 24%;
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -103,15 +102,13 @@
                     <h1>Sample Task 1 title</h1>
                     <p>Sample Task 1 description</p>
                     <p class="signature">Signature</p>
+
                     <div class="buttoncontainer">
-                        <button class="buttonR">Next</button>
-                        <button class="buttonL">Back</button>
-                    </div>
-                    <div>
                         <button>Edit</button>
                         <button>Delete</button>
+                        <button>Next</button>
+                        <button>Back</button>
                     </div>
-
                 </div> 
             </div>
             <button>
