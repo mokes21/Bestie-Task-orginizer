@@ -11,6 +11,17 @@
             height: 100%;
             font-family: sans-serif;
         }
+        button{
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: bottom;
+        }
 
         .board {
             display: flex;
@@ -45,6 +56,41 @@
             padding: 10px;
             border: 1px dashed #ccc;
         }
+        .card{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .card h1{
+            font-size: 18px;
+            margin: 0 0 5px 0;
+            text-align: center;
+        }
+        .signature{
+            font-size: 12px;
+            text-align: right;
+            color: #777;
+        }
+        .buttonR{
+            height: 30px;
+            width: 50px;
+            margin: 1%;
+            float: right;
+            text-align: center;
+        }
+        .buttonL{
+            height: 30px;
+            width: 50px;
+            margin: 1%;
+            float: left;
+            text-align: center;
+        }
+        .buttoncontainer{
+            float: right;
+            width: 110px;
+        }
     </style>
 </head>
 <body>
@@ -53,13 +99,31 @@
         <div class="column">
             <h2>To Do</h2>
             <div class="task-list">
-                </div>
+                <div class="card">
+                    <h1>Sample Task 1 title</h1>
+                    <p>Sample Task 1 description</p>
+                    <p class="signature">Signature</p>
+                    <div class="buttoncontainer">
+                        <button class="buttonR">Next</button>
+                        <button class="buttonL">Back</button>
+                    </div>
+                    <div>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+
+                </div> 
+            </div>
+            <button>
+                Add Task
+            </button>
         </div>
 
         <div class="column">
             <h2>In Progress</h2>
             <div class="task-list">
                 </div>
+            
         </div>
 
         <div class="column">
