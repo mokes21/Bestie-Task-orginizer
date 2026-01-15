@@ -14,8 +14,15 @@ button{
     border-radius: 5px;
     cursor: pointer;
     align-self: bottom;
+    height: 30px;
+    width: 50px;
+    margin: 1%;
+    ;
+    text-align: center;
 }
-
+.add{
+    width: 100%;
+}
 .board {
     display: flex;
     height: 100vh;
@@ -30,6 +37,7 @@ button{
     flex-direction: column;
     border-right: 1px solid #ddd;
     padding: 20px;
+
 }
 
 .column h2 {
@@ -47,6 +55,8 @@ button{
     margin-top: 15px;
     padding: 10px;
     border: 1px dashed #ccc;
+    text-align: center;
+    
 }
 .card{
     background-color: rgb(255, 255, 255);
@@ -65,21 +75,9 @@ button{
     text-align: right;
     color: #777;
 }
-.buttonR{
-    height: 30px;
-    width: 50px;
-    margin: 1%;
-    float: right;
-    text-align: center;
-}
-.buttonL{
-    height: 30px;
-    width: 50px;
-    margin: 1%;
-    float: left;
-    text-align: center;
-}
 .buttoncontainer{
-    float: right;
-    width: 110px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
