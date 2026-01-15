@@ -8,8 +8,8 @@ button{
     margin-top: 10px;
     padding: 10px;
     width: 100%;
-    background-color: #007bff;
-    color: white;
+    background-color: #567a34d7;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -17,7 +17,6 @@ button{
     height: 30px;
     width: 50px;
     margin: 1%;
-    ;
     text-align: center;
 }
 .add{
@@ -27,41 +26,40 @@ button{
     display: flex;
     height: 100vh;
     width: 100vw; 
-    background-color: #f4f4f9;
+    background-color: #517241ee;
 }
 
 
 .column {
-    flex: 1; 
+    flex: 3; 
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #ddd;
+    border-right: 15px solid #212e1998;
     padding: 20px;
 
 }
 
 .column h2 {
     text-align: center;
-    color: #333;
-    border-bottom: 2px solid #007bff;
+    color: #ffffffbd;
+    border-bottom: 2px solid #000000;
     padding-bottom: 10px;
     margin-top: 0;
 }
 
 .task-list {
     flex-grow: 1;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(37, 7, 9, 0.363);
     border-radius: 8px;
     margin-top: 15px;
     padding: 10px;
-    border: 1px dashed #ccc;
+    border: 1px dashed #e4e4e4;
     text-align: center;
     
 }
 .card{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.836);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -73,7 +71,7 @@ button{
 .signature{
     font-size: 12px;
     text-align: right;
-    color: #777;
+    color: #440d0d;
 }
 .buttoncontainer{
     text-align: center;
