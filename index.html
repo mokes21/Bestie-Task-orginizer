@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="Skrypt.js"></script>
 </head>
+<style>
+    #openbtn { background-color: blue;color: white;font-size: 1rem;}
+    #submitBtn { background: #28a745; color: white; flex-grow: 1; }
+    #closeBtn { background: #dc3545; color: white; }
+</style>
 <body>
 
     <div class="board">
@@ -26,9 +31,42 @@
                     </div>
                 </div> 
             </div>
-            <button class="add">
+            <button id="openBtn">
                 Add Task
             </button>
+            <dialog id ="Addtaskpop">
+        <form method="dialog">
+            <h2 style="margin-top: 0;">Hello!</h2>
+            
+            <input type="text"placeholder="Title" required>
+            <input type="text"placeholder="Opis" required>
+            <input type="text"placeholder="Signature" required>
+            
+            <div class="actions">
+                <button type="button" id="closeBtn">Cancel</button>
+                <button type="submit" id="submitBtn">Submit</button>
+            </div>
+        </form>
+            </dialog>
+            <!-- <dialog id="AddtaskDialog">
+                <form method="dialog">
+                    <h2>Add New Task</h2>
+                    <label for="taskTitle">Title:</label>
+                    <input type="text" id="taskTitle" name="taskTitle" required>
+                    
+                    <label for="taskDescription">Description:</label>
+                    <textarea id="taskDescription" name="taskDescription" required></textarea>
+                    
+                    <label for="taskSignature">Signature:</label>
+                    <input type="text" id="taskSignature" name="taskSignature" required>
+                    
+                    <div class="dialog-buttons">
+                        <button type="submit">Add Task</button>
+                        <button type="button" id="closebtn">Cancel</button>
+                    </div>
+                </form>
+
+            </dialog> -->
         </div>
 
         <div class="column">
@@ -45,5 +83,22 @@
         </div>
     </div>
 
+<script>
+    const dialog = document.getElementById('Addtaskpop');
+    const openbtn = document.getElementById('openBtn');
+    const closebtn = document.getElementById('closeBtn');
+    
+    if (openbtn && dialog) {
+        openbtn.addEventListener('click', () => {
+            dialog.showModal();
+        });
+    }
+
+    if (closebtn && dialog) {
+        closebtn.addEventListener('click', () => {
+            dialog.close();
+        });
+    }
+</script>
 </body>
 </html>
