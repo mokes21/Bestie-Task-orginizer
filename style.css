@@ -78,3 +78,13 @@ button{
     justify-content: center;
     align-items: center;
 }
+dialog {
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
