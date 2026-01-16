@@ -8,7 +8,7 @@ button{
     margin-top: 10px;
     padding: 10px;
     width: 100%;
-    background-color: #567a34d7;
+    background-color:  #415c31e0;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
@@ -21,20 +21,19 @@ button{
 }
 .add{
     width: 100%;
+    background-color: #253517bd;
 }
 .board {
     display: flex;
     height: 100vh;
     width: 100vw; 
-    background-color: #517241ee;
+    background-color: #365f21d0;
 }
-
-
 .column {
     flex: 3; 
     display: flex;
     flex-direction: column;
-    border-right: 15px solid #212e1998;
+    border-right: 15px solid #253517bd;
     padding: 20px;
 
 }
