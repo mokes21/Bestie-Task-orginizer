@@ -6,11 +6,6 @@
     <title>Task Organizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    #openbtn { background-color: blue;color: white;font-size: 1rem;}
-    #submitBtn { background: #28a745; color: white; flex-grow: 1; }
-    #closeBtn { background: #dc3545; color: white; }
-</style>
 <body>
     <div class="board">
         <div class="column">
@@ -82,23 +77,6 @@
     </div>
 
 <script src="Skrypt.js"></script>
-<script>
-    const dialog = document.getElementById('Addtaskpop');
-    const openbtn = document.getElementById('openBtn');
-    const closebtn = document.getElementById('closeBtn');
-    
-    if (openbtn && dialog) {
-        openbtn.addEventListener('click', () => {
-            dialog.showModal();
-        });
-    }
-
-    if (closebtn && dialog) {
-        closebtn.addEventListener('click', () => {
-            dialog.close();
-        });
-    }
-</script>
 
 </body>
 </html>

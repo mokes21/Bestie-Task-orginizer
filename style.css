@@ -88,3 +88,17 @@ dialog {
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.5);
 }
+#openbtn { 
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+}
+#submitBtn { 
+    background: #28a745; 
+    color: white; 
+    flex-grow: 1; 
+}
+#closeBtn { 
+    background: #dc3545; 
+    color: white; 
+}
