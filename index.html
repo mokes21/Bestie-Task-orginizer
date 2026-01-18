@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Organizer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="Skrypt.js"></script>
 </head>
 <style>
     #openbtn { background-color: blue;color: white;font-size: 1rem;}
@@ -13,7 +12,6 @@
     #closeBtn { background: #dc3545; color: white; }
 </style>
 <body>
-
     <div class="board">
         <div class="column">
             <h2>To Do</h2>
@@ -25,7 +23,7 @@
 
                     <div class="buttoncontainer">
                         <button>Edit</button>
-                        <button>Delete</button>
+                        <button id="delete">Delete</button>
                         <button>Next</button>
                         <button>Back</button>
                     </div>
@@ -83,6 +81,7 @@
         </div>
     </div>
 
+<script src="Skrypt.js"></script>
 <script>
     const dialog = document.getElementById('Addtaskpop');
     const openbtn = document.getElementById('openBtn');
@@ -100,5 +99,6 @@
         });
     }
 </script>
+
 </body>
 </html>
